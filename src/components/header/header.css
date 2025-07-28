@@ -1,0 +1,18 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    min-height: 3rem;
+}
+
+.menu {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-around;
+    color: aliceblue;
+}
+div a img {
+    max-width: 1.5rem;
+}
