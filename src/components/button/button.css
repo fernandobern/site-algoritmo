@@ -1,0 +1,57 @@
+.button {
+  min-width: 12rem;
+  position: relative;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color:transparent; /* cor de fundo interna */
+  color: #ffffff;
+  font-weight: 200;
+  font-size: x-large;
+  text-align: center;
+  justify-content: center;
+  border-radius: 2rem;
+  z-index: 1;
+  overflow: hidden;
+  border: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.button::before {
+  border-radius: 2rem;
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 0.2rem; /* espessura da borda */
+  background: linear-gradient(90deg, #23d2ff, #3f4def);
+  justify-content: center;
+
+
+  /* Máscara para esconder o centro e mostrar só a borda */
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+
+  z-index: -1;
+}
+
+.button:hover {
+  transform: scale(1.09);
+  justify-content: center;
+  text-align: center;
+  font-weight: 400;
+  font-size: x-large;
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+}

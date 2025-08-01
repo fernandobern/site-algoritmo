@@ -1,3 +1,10 @@
-h1 {
-    
+div {
+    height: fit-content;
+}
+
+div .subtitle {
+    display: flex;
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+    font-size: 30px;
 }

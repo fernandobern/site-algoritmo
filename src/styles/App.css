@@ -2,6 +2,9 @@
   color: aliceblue;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 a {
@@ -17,4 +20,5 @@ body {
   background-size: cover;
   background-repeat: repeat;
   background-position: absolute;
+  background-color: #545454;
 }
