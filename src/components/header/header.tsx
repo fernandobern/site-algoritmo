@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+
 import logo from '../../img/logo.png'
 import './header.css';
 
@@ -13,6 +13,7 @@ export default function Header() {
             <div className='menu'>
                 <a href="">Contato</a>
                 <a href="">Sobre</a>
+                <a href="">Links</a>
             </div>
         </div>
     )
